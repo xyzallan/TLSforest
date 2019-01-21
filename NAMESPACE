@@ -1,2 +1,2 @@
-
 export(distMatr2d)
+export(distMatr3d)
