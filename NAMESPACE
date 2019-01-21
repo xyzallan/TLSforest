@@ -1,3 +1,3 @@
-useDynLib(TlsNfi, .registration=TRUE)
+useDynLib(TLSforest, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
 importFrom(Rcpp, evalCpp)
