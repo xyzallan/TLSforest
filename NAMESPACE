@@ -1,3 +1,4 @@
 export(distMatr2d)
 export(distMatr3d)
-export(neighbCount)
+export(neighbCount2d)
+export(neighbCount3d)

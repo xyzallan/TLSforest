@@ -1,9 +1,19 @@
-neighbCount <- function(x, y, radius = 0.05)
+neighbCount2d <- function(x, y, radius = 0.05)
 {
   cnc <- function(x, rd)
   {
     length(x[x <= rd])
   }
   mtr <- distMatr2d(x, y)
+  apply(mtr, 1, cnc, radius)
+}
+
+neighbCount3d <- function(x, y, z, radius = 0.05)
+{
+  cnc <- function(x, rd)
+  {
+    length(x[x <= rd])
+  }
+  mtr <- distMatr3d(x, y, z)
   apply(mtr, 1, cnc, radius)
 }
