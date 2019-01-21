@@ -6,8 +6,7 @@ neighbCount2d <- function(x, y, radius = 0.05)
   {
     length(x[x <= rd])
   }
-  mtr <- distMatr2d(x, y)
-  apply(mtr, 1, cnc, radius)
+  apply(distMatr2d(x, y), 1, cnc, radius)
 }
 
 # Neighbours count from 3D data
@@ -17,6 +16,5 @@ neighbCount3d <- function(x, y, z, radius = 0.05)
   {
     length(x[x <= rd])
   }
-  mtr <- distMatr3d(x, y, z)
-  apply(mtr, 1, cnc, radius)
+  apply(distMatr3d(x, y, z), 1, cnc, radius)
 }
