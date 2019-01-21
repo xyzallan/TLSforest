@@ -1,7 +1,7 @@
 \name{neighbCount}
 \alias{neighbCount}
 \title{
-neighbCount
+Neighbours count in radius x.
 }
 \description{
 neighbCount
@@ -10,10 +10,10 @@ neighbCount
 neighbCount(x, y, radius = 0.05)
 }
 \arguments{
-  \item{x}{x coordinate}
-  \item{y}{y coordinate}
-  \item{radius}{radius of points}
+  \item{x}{vector of x coordinate}
+  \item{y}{vector of y coordinate}
+  \item{radius}{radius in meters}
 }
 \details{
-neighbCount
+Calculates neighbours count in a given radius.
 }
