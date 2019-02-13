@@ -6,13 +6,13 @@ distMatr2d <- function(x, y)
 
 cppFunction('
 NumericMatrix cppDistMatr2d(NumericVector x, NumericVector y) {
-  NumericMatrix tulem(x.size(), x.size());
+  NumericMatrix retValue(x.size(), x.size());
 
   for(int i = 0; i < x.size(); i++)
     {
-      tulem(_,i) = sqrt(pow(x - x[i], 2) + pow(y - y[i], 2));
+      retValue(_,i) = sqrt(pow(x - x[i], 2) + pow(y - y[i], 2));
     }
-    return tulem;
+    return retValue;
 }')
 
 # Matrix of distances from 3D data
@@ -23,11 +23,11 @@ distMatr3d <- function(x, y, z)
 
 cppFunction('
 NumericMatrix cppDistMatr3d(NumericVector x, NumericVector y, NumericVector z) {
-  NumericMatrix tulem(x.size(), x.size());
+  NumericMatrix retValue(x.size(), x.size());
 
   for(int i = 0; i < x.size(); i++)
     {
-      tulem(_,i) = sqrt(pow(x - x[i], 2) + pow(y - y[i], 2) + pow(z - z[i], 2));
+      retValue(_,i) = sqrt(pow(x - x[i], 2) + pow(y - y[i], 2) + pow(z - z[i], 2));
     }
-    return tulem;
+    return retValue;
 }')
