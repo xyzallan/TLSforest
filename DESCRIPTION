@@ -6,4 +6,5 @@ Date: 2019-01-21
 Author: Allan Sims
 Maintainer: Allan Sims <allan.sims@envir.ee>
 Description: Terrestrial Laser Scanner for Forestry.
+LinkingTo: Rcpp
 License: GPL (>= 2)
